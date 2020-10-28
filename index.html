@@ -1,12 +1,396 @@
+<!DOCTYPE html>
 <html>
-    <head>
-        <title>
-            Do I wanna know?
-        </title>
-    </head>
-    <body>
-        <h1>
-            I'm going back to 5o5!
-        </h1>
-    </body>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Do I wanna know?</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="robots" content="all,follow">
+    <!-- Bootstrap CSS-->
+    <link rel="stylesheet" href="vendor/bootstrap/css/bootstrap.min.css">
+    <!-- Font Awesome CSS-->
+    <link rel="stylesheet" href="vendor/font-awesome/css/font-awesome.min.css">
+    <!-- Google fonts - Roboto + Roboto Slab-->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,700%7CRoboto:400,700,300">
+    <!-- owl carousel-->
+    <link rel="stylesheet" href="vendor/owl.carousel/assets/owl.carousel.css">
+    <link rel="stylesheet" href="vendor/owl.carousel/assets/owl.theme.default.css">
+    <!-- animate.css-->
+    <link rel="stylesheet" href="vendor/animate.css/animate.css">
+    <!-- theme stylesheet-->
+    <link rel="stylesheet" href="css/style.default.css" id="theme-stylesheet">
+    <!-- Custom stylesheet - for your changes-->
+    <link rel="stylesheet" href="css/custom.css">
+    <!-- Leaflet CSS - For the map-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.4.0/leaflet.css">
+    <!-- Favicon-->
+    <link rel="shortcut icon" href="img/nh.png">
+    <!-- Tweaks for older IEs--><!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+        <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script><![endif]-->
+  </head>
+  <body>
+    <!-- Reference item-->
+    <!-- navbar-->
+    <header class="header">
+      <nav class="navbar navbar-expand-lg fixed-top">
+        <div data-animate="fadeInDown" class="logo"><img src="img/nh.png" alt="logo" width="130"></div>
+        
+          <button type="button" data-toggle="collapse" data-target="#navbarcollapse" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler navbar-toggler-right"><span class="fa fa-bars"></span></button>
+          <div id="navbarcollapse" class="collapse navbar-collapse">
+            <ul class="navbar-nav ml-auto">
+              <li class="nav-item"><a href="#intro" class="nav-link link-scroll">Intro</a></li>
+              <li class="nav-item"><a href="#about" class="nav-link link-scroll">About</a></li>
+              <!-- <li class="nav-item"><a href="#services" class="nav-link link-scroll">Services</a></li> -->
+              <li class="nav-item"><a href="#references" class="nav-link link-scroll">My work</a></li>
+              <li class="nav-item"><a href="#testimonials" class="nav-link link-scroll">Certifications</a></li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <!-- Intro Image-->
+    <section id="intro" style="background: url(img/parallax.jpg) center center no-repeat; background-size: cover;" class="intro-section pb-2">
+      <div class="container text-center">
+        <div class="container"><a href="#intro" class="navbar-brand scrollTo" style="color: azure; background-color: black;">Niranjan Adhyapak(aka Hardy)</a>
+        <h1 data-animate="fadeInDown" class="text-shadow mb-5">Hello, hola, नमस्ते !</h1>
+        <p data-animate="slideInUp" class="h3 text-shadow text-400">Solving problems is a skill, coding is the tool.</p>
+      </div>
+    </section>
+    <!-- About-->
+    <section id="about" class="about-section">
+      <div class="container">
+        <header class="text-center">
+          <h2 data-animate="fadeInDown" class="title">About me</h2>
+        </header>
+        <div class="row">
+          <div data-animate="fadeInUp" class="col-lg-6">
+            <p>
+              A Data Scientist by designation, but an avid problem solver by heart. My expertise lies in but is not limited to, <strong>Machine Learning and Deep Learning mainly in the area of Computer Vision.</strong>
+            </p>
+            <p>
+              I have a Bachelor's degree in Information Science and Engineering and <strong>pursuing the Distance Learning Master's Program in Computer Science(<a href="https://omscs.gatech.edu/" target="_blank">OMSCS</a>) from Georgia Institute of Technology.</strong> 
+              This provided me with the perfect mix of learning from one of the best Universities and directly applying the learnings to challenges at my workplace!
+            </p>
+            <p>
+              I have 3+ years of professional experience at Mercedes-Benz R&D in which, I have had the chance to work on some exciting technologies and frameworks:
+            </p>
+            <p>
+              {Databases:MySQL, MongoDB, Object Storage(S3), Solr(NoSQL search engine)},
+            </p>
+            <p> {Server side:C# ASP .Net MVC, Solr, Python 3.x, Flask},</p>
+            <p>{Data Science: Scikit-learn, Keras with TensorFlow, PySpark, OpenCV, Numpy, Pandas},</p>
+            <p>{Version control and Operations: TFS, Git, Virtual Machines, Nvidia V100 GPU-CUDA drivers Setup},</p>
+            <p>{Front-end: HTML, CSS, Bootstrap, jquery}.</p>
+          </div>
+          <div data-animate="fadeInUp" class="col-lg-6">
+            <div class="skill-item">
+              <div class="progress-title">C# ASP .Net MVC</div>
+              <div class="progress">
+                <div role="progressbar" style="width: 60%" aria-valuenow="0" aria-valuemin="60" aria-valuemax="100" class="progress-bar progress-bar-skill1"></div>
+              </div>
+            </div>
+            <div class="skill-item">
+              <div class="progress-title">Keras and TensorFlow for Deep Learning</div>
+              <div class="progress">
+                <div role="progressbar" style="width: 85%" aria-valuenow="70" aria-valuemin="60" aria-valuemax="100" class="progress-bar progress-bar-skill2"></div>
+              </div>
+            </div>
+            <div class="skill-item">
+              <div class="progress-title">OpenCV for Image/Video processing</div>
+              <div class="progress">
+                <div role="progressbar" style="width: 80%" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" class="progress-bar progress-bar-skill3"></div>
+              </div>
+            </div>
+            <div class="skill-item">
+              <div class="progress-title">Scikit Learn, Numpy and Pandas for Machine Learning</div>
+              <div class="progress">
+                <div role="progressbar" style="width: 70%" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100" class="progress-bar progress-bar-skill4"></div>
+              </div>
+            </div>
+            <div class="skill-item">
+              <div class="progress-title">Backend Web Development using Flask</div>
+              <div class="progress">
+                <div role="progressbar" style="width: 70%" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100" class="progress-bar progress-bar-skill4"></div>
+              </div>
+            </div>
+            <div class="skill-item">
+              <div class="progress-title">Front end Web development</div>
+              <div class="progress">
+                <div role="progressbar" style="width: 60%" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" class="progress-bar progress-bar-skill5"></div>
+              </div>
+            </div>
+            <div class="skill-item">
+              <div class="progress-title">360 deg. photography H/W setup and visualization S/W</div>
+              <div class="progress">
+                <div role="progressbar" style="width: 85%" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" class="progress-bar progress-bar-skill5"></div>
+              </div>
+            </div>
+            <div class="skill-item">
+              <div class="progress-title">Photogrammetry and SLAM</div>
+              <div class="progress">
+                <div role="progressbar" style="width: 60%" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" class="progress-bar progress-bar-skill5"></div>
+              </div>
+            </div>
+            <div class="skill-item">
+              <div class="progress-title">Git, TFS, CUDA drivers Setup</div>
+              <div class="progress">
+                <div role="progressbar" style="width: 70%" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100" class="progress-bar progress-bar-skill4"></div>
+              </div>
+            </div>
+          </div>
+          <div data-animate="fadeInUp" class="col-sm-6 mx-auto mt-5"><img src="img/hardy.jpg" alt="This is me - IT worker" class="image rounded-circle img-fluid"></div>
+        </div>
+      </div>
+    </section>
+    <!-- Service
+    <section id="services" class="bg-gradient services-section">
+      <div class="container">
+        <header class="text-center">
+          <h2 data-animate="fadeInDown" class="title">Services</h2>
+        </header>
+        <div class="row services text-center">
+          <div data-animate="fadeInUp" class="col-lg-4">
+            <div class="icon"><i class="fa fa-search"></i></div>
+            <h3 class="heading mb-3 text-400">Consulting</h3>
+            <p class="text-left description">On on produce colonel pointed. Just four sold need over how any. In to september suspicion determine he prevailed admitting. On adapted an as affixed limited on. Giving cousin warmly things no spring mr be abroad. Relation breeding be as repeated strictly followed margaret. One gravity son brought shyness waiting regular led ham.</p>
+          </div>
+          <div data-animate="fadeInUp" class="col-lg-4">
+            <div class="icon"><i class="fa fa-html5"></i></div>
+            <h3 class="heading mb-3 text-400">HTML coding</h3>
+            <p class="text-left description">Manor we shall merit by chief wound no or would. Oh towards between subject passage sending mention or it. Sight happy do burst fruit to woody begin at. Assurance perpetual he in oh determine as.</p>
+          </div>
+          <div data-animate="fadeInUp" class="col-lg-4">
+            <div class="icon"><i class="fa fa-tachometer"></i></div>
+            <h3 class="heading mb-3 text-400">PHP webdelopment</h3>
+            <p class="text-left description">Rooms oh fully taken by worse do. Points afraid but may end law lasted. Was out laughter raptures returned outweigh. Luckily cheered colonel me do we attacks on highest enabled. Tried law yet style child. Bore of true of no be deal.</p>
+          </div>
+        </div>
+        <hr data-animate="fadeInUp">
+        <div data-animate="fadeInUp" class="text-center">
+          <p class="lead">Would you like to know more or just discuss something?</p>
+          <p><a href="#contact" class="btn btn-outline-light link-scroll">Contact me</a></p>
+        </div>
+      </div>
+    </section> -->
+    <!--
+    *** REFERENCES IMAGE ***
+    _________________________________________________________
+    -->
+    <section id="references">
+      <div class="container">
+        <div class="col-sm-12">
+          <div class="mb-5 text-center">
+            <h2 data-animate="fadeInUp" class="title">My work</h2>
+            <p data-animate="fadeInUp" class="lead">Projects executed. (Note:This is a subset of my projects but, I have made few of my Personal/Hobby projects public on <a href="https://github.com/snap0ut0fit" target="_blank">My GitHub profile</a>)</p>
+          </div>
+          <ul id="filter" data-animate="fadeInUp">
+            <li class="active"><a href="#" data-filter="all">All</a></li>
+            <li><a href="#" data-filter="webdesign">Webdesign</a></li>
+            <li><a href="#" data-filter="threesixty">Object 360-photography and Photogrammetry</a></li>
+            <li><a href="#" data-filter="dl">Deep Learning</a></li>
+            <li><a href="#" data-filter="ml">Machine Learning</a></li>
+            <li><a href="#" data-filter="other">other</a></li>
+          </ul>
+          <div id="detail">
+            <div class="row">
+              <div class="col-lg-10 mx-auto"><span class="close">×</span>
+                <div id="detail-slider" class="owl-carousel owl-theme"></div>
+                <div class="text-center">
+                  <h1 id="detail-title" class="title"></h1>
+                </div>
+                <div id="detail-content"></div>
+              </div>
+            </div>
+          </div>
+          <!-- Reference detail-->
+          <div id="references-masonry" data-animate="fadeInUp">
+            <div class="row">
+                  <div data-category="threesixty" class="reference-item col-lg-3 col-md-6">
+                    <div class="reference"><a href="#"><img src="img/360.png" alt="" class="img-fluid">
+                        <div class="overlay">
+                          <div class="inner">
+                            <h3 class="h4 reference-title">360 photography</h3>
+                            <p>Deciding on the chamber setup, cameras, lenses and developing the visualization software</p>
+                          </div>
+                        </div></a>
+                      <div data-images="img/360.png" class="sr-only reference-description">
+                        <p>The project involved 4 main aspects:</p>
+                        <p>Decide on the specifications of the chamber, Decide on the cameras, lens and lighting system, Supporting for large data storage and retrieval via S3 protocol and developing the 360 degree visualization software.</p>
+                        <p>since this was a part of my professional work and the data is confidential, details are not disclosed. I have added the certificate for 360 photography training in the certifications section</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div data-category="webdesign" class="reference-item col-lg-3 col-md-6">
+                    <div class="reference"><a href="#"><img src="img/mmc.PNG" alt="" class="img-fluid">
+                        <div class="overlay">
+                          <div class="inner">
+                            <h3 class="h4 reference-title">.Net MVC documentation application</h3>
+                            <p>.Net MVC Application for Corrosion Documentation + Camera control software.</p>
+                          </div>
+                        </div></a>
+                      <div data-images="img/mmc.PNG" class="sr-only reference-description">
+                        <p>A web application that allowed users to click images via a camera, automatically copy the image from the camera to be uploaded to the .Net MVC web application for the particular part under inspection.</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div data-category="dl" class="reference-item col-lg-3 col-md-6">
+                    <div class="reference"><a href="#"><img src="img/cre.PNG" alt="" class="img-fluid">
+                        <div class="overlay">
+                          <div class="inner">
+                            <h3 class="h4 reference-title">Corrosion Analyser</h3>
+                            <p>A Deep Learning tool to identify and analyse the type and intensity of Corrosion.(Patent applied)</p>
+                          </div>
+                        </div></a>
+                      <div data-images="img/cre.PNG" class="sr-only reference-description">
+                        <p>A Deep Learning tool that can identify corrosion of different types occuring on car parts during corrosion testing and analyse the intensity of the same. This project was filed for a patent by the company and the idea is approved to be novel.</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div data-category="ml" class="reference-item col-lg-3 col-md-6">
+                    <div class="reference"><a href="#"><img src="img/hil.PNG" alt="" class="img-fluid">
+                        <div class="overlay">
+                          <div class="inner">
+                            <h3 class="h4 reference-title">ECU Test Scripts ranking</h3>
+                            <p>Implementing prioritization and ranking of test scripts of various ECU components within the car using Machine Learning techniques.</p>
+                          </div>
+                        </div></a>
+                      <div data-images="img/hil.PNG" class="sr-only reference-description">
+                        <p>Implementing prioritization and ranking of test scripts of various ECU components within the car using Machine Learning techniques. Details not disclosed due to confidentiality reasons</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div data-category="other" class="reference-item col-lg-3 col-md-6">
+                    <div class="reference"><a href="#"><img src="img/scrape.PNG" alt="" class="img-fluid">
+                        <div class="overlay">
+                          <div class="inner">
+                            <h3 class="h4 reference-title">Ethical Web Scraping</h3>
+                            <p>Creating custom Deep Learning datasets by Ethical Web Sraping from Google Images.</p>
+                          </div>
+                        </div></a>
+                      <div data-images="img/scrape.PNG" class="sr-only reference-description">
+                        <p>Creating custom Deep Learning datasets by Ethical Web Sraping from Google Images. Makes use of Python scripts and few javascript commands</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div data-category="other" class="reference-item col-lg-3 col-md-6">
+                    <div class="reference"><a href="#"><img src="img/hash.PNG" alt="" class="img-fluid">
+                        <div class="overlay">
+                          <div class="inner">
+                            <h3 class="h4 reference-title">Image Hashing</h3>
+                            <p>Hashing the images in a Deep Learning dataset to either remove duplicate images or cluster similar images together.</p>
+                          </div>
+                        </div></a>
+                      <div data-images="img/hash.PNG" class="sr-only reference-description">
+                        <p>Hashing the images in a Deep Learning dataset to either remove duplicate images or cluster similar images together.</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div data-category="dl" class="reference-item col-lg-3 col-md-6">
+                    <div class="reference"><a href="#"><img src="img/face.PNG" alt="" class="img-fluid">
+                        <div class="overlay">
+                          <div class="inner">
+                            <h3 class="h4 reference-title">Face Recognition</h3>
+                            <p>Face recognition with just 10 images</p>
+                          </div>
+                        </div></a>
+                      <div data-images="img/face.PNG" class="sr-only reference-description">
+                        <p>Face recognition by using just 10 images. Makes use of Triplet loss Embedding generator and Facial Landmark detectors. Original Research Paper called Facenet.</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div data-category="other" class="reference-item col-lg-3 col-md-6">
+                    <div class="reference"><a href="#"><img src="img/among.PNG" alt="" class="img-fluid">
+                        <div class="overlay">
+                          <div class="inner">
+                            <h3 class="h4 reference-title">Among us doodle via Python</h3>
+                            <p>Program using the Python Turtle package to doodle the Among Us mini character.</p>
+                          </div>
+                        </div></a>
+                      <div data-images="img/among.PNG" class="sr-only reference-description">
+                        <p>Program using the Python Turtle package to doodle the Among Us mini character.</p>
+                      </div>
+                    </div>
+                  </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Statistics-->
+    <section id="statistics" data-dir="up" style="background: url(&quot;img/parallax.jpg&quot;);" class="statistics-section text-white parallax parallax">
+      <div class="container">
+        <div class="row showcase text-center"> 
+          <div data-animate="fadeInUp" class="col-lg-3 col-md-6">
+            <div class="item">
+              <div class="icon"><i class="fa fa-align-justify"></i></div>
+              <h5 class="text-400 mt-4 text-uppercase"><span class="counter">5</span><br>Professional projects</h5>
+            </div>
+          </div>
+          <div data-animate="fadeInUp" class="col-lg-3 col-md-6">
+            <div class="item">
+              <div class="icon"><i class="fa fa-instagram"></i></div>
+              <h5 class="text-400 mt-4 text-uppercase"><span class="counter">15</span><br>Personal/Hobby projects</h5>
+            </div>
+          </div>
+          <div data-animate="fadeInUp" class="col-lg-3 col-md-6">
+            <div class="item">
+              <div class="icon"><i class="fa fa-copy"></i></div>
+              <h5 class="text-400 mt-4 text-uppercase"><span class="counter">5</span><br>Research oriented projects</h5>
+            </div>
+          </div>
+          <div data-animate="fadeInUp" class="col-lg-3 col-md-6">
+            <div class="item">
+              <div class="icon"><i class="fa fa-envelope"></i></div>
+              <h4 class="text-400 mt-4 text-uppercase"><span class="counter">2</span><br>Patents Filed<br></h4><h5>(Novelty accepted, approval in progress)</h5>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="dark-mask"></div>
+    </section>
+    <!-- Testimonials-->
+    <section id="testimonials" class="testimonials-section bg-gray">
+      <div class="container">
+        <header class="text-center mb-2">
+          <h2 data-animate="fadeInUp" class="title">Certificates and Certifications</h2>
+          <p data-animate="fadeInUp" class="lead">Silver award for Employee of the year twice in a row within 3 years of experience.</p>
+          <p>Primary contributor to 2 patents.</p>
+          <p>Certified object 360 photography facilitated by the organization</p>
+          <p>Udemy certified Machine Learning course completion</p>
+          <p>Below are the certificates</p>
+
+          <img src="img/silver.PNG" alt="Silver award certificate"/>
+
+          <img src="img/cert360.PNG" alt="360 photography training certificate"/>
+          
+          <img src="img/mla2z.PNG" alt="ML A-Z certificate"/>
+        </header>
+      </div>
+    </section>
+    <!-- Map-->
+      <footer class="main-footer">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-6 text-left text-lg-left">
+              <p class="social"><a href="https://github.com/snap0ut0fit" class="external github wow fadeInUp"><i class="fa fa-github"></i></a><a href = "mailto: niranjan24695@gmail.com" class="external gmail wow fadeInUp"><i class="fa fa-gmail"></i>Mail</a></p>
+            </div>
+            <!-- /.6-->
+            <div class="col-md-6 text-center text-lg-right mt-4 mt-lg-0">
+              <p>© 2020 Niranjan Adhyapak. All rights reserved.</p>
+            </div>
+          </div>
+        </div>
+      </footer>
+    <!-- JavaScript files-->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="vendor/jquery.cookie/jquery.cookie.js"> </script>
+    <script src="vendor/owl.carousel/owl.carousel.min.js"></script>
+    <script src="vendor/waypoints/lib/jquery.waypoints.min.js"></script>
+    <script src="vendor/jquery.counterup/jquery.counterup.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.4.0/leaflet.js"> </script>
+    <script src="js/front.js"></script>
+  </body>
 </html>
